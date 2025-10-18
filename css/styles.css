@@ -1,0 +1,346 @@
+/* General Body Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+
+/* Navigation */
+nav {
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+main {
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Skills */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skill-tags span {
+  background-color: #ddd;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.skill-tags span:hover {
+  background-color: #ccc;
+}
+
+.skill-tags i {
+  margin-right: 5px;
+}
+
+/* Projects */
+#projects h2 {
+  margin-top: 0;
+}
+
+.project-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px; /* Add some space between the title and the tiles */
+}
+
+.project-tile {
+  background-color: #f9f9f9; /* Slightly different background for tiles */
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 300px;
+}
+
+.project-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 15px;
+}
+
+.project-tile h3 {
+  margin-top: 0;
+}
+
+.project-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+/* Icon Color Transitions */
+.social-links a i,
+.skill-tags span i,
+footer a i {
+    transition: color 0.3s ease;
+}
+
+/* Icon Colors on Hover */
+
+/* Social Icons */
+.social-links a:hover .fa-linkedin,
+footer a:hover .fa-linkedin {
+    color: #0077B5;
+}
+
+.social-links a:hover .fa-github,
+footer a:hover .fa-github {
+    color: #999;
+}
+
+.dark-theme .social-links a:hover .fa-github,
+.dark-theme footer a:hover .fa-github {
+    color: #fff;
+}
+
+/* Skill Icons */
+.skill-tags span:hover .devicon-python-plain {
+    color: #3776AB;
+}
+
+.skill-tags span:hover .devicon-c-plain {
+    color: #A8B9CC;
+}
+
+.skill-tags span:hover .devicon-java-plain {
+    color: #007396;
+}
+
+.skill-tags span:hover .devicon-postgresql-plain {
+    color: #4169E1;
+}
+
+.skill-tags span:hover .devicon-flask-original {
+    color: #000000;
+}
+
+.dark-theme .skill-tags span:hover .devicon-flask-original {
+    color: #fff;
+}
+
+.skill-tags span:hover .devicon-docker-plain {
+    color: #2496ED;
+}
+
+.skill-tags span:hover .devicon-googlecloud-plain {
+    color: #4285F4;
+}
+
+.skill-tags span:hover .fa-brain {
+    color: #8A2BE2;
+}
+
+.skill-tags span:hover .fa-code {
+    color: #F16529;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+}
+
+.dark-theme header {
+  background-color: #1f1f1f;
+}
+
+.dark-theme nav {
+  background-color: #2d2d2d;
+}
+
+.dark-theme nav a:hover {
+  background-color: #555;
+}
+
+.dark-theme .card {
+  background-color: #3a3a3a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .project-tile {
+    background-color: #424242;
+}
+
+.dark-theme .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme .skill-tags span {
+  background-color: #555;
+}
+
+.dark-theme .skill-tags span:hover {
+  background-color: #666;
+}
+
+.dark-theme .project-link {
+  color: #61dafb;
+}
+
+/* Theme Toggle Icon */
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-theme #theme-toggle .fa-sun {
+  display: block;
+}
+
+body.dark-theme #theme-toggle .fa-moon {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #aaa;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #444;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+}

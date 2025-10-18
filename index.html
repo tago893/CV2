@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Varun Chikkala - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Varun Chikkala</h1>
+      <p><em>Master's Student in Computer Science</em></p>
+      <p><strong>Portland State University</strong> | <em>Graduating July 2025</em></p>
+      <p><strong>GPA:</strong> 3.91/4.0</p>
+      <p>
+        I am a web developer and machine learning enthusiast with experience in API development, cloud computing, and
+        data engineering.
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div id="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <hr>
+      <h3>Portland State University</h3>
+      <p>M.S. in Computer Science (2023 - 2025)</p>
+      <h3>VIT, Vellore</h3>
+      <p>B.Tech in Computer Science (Bioinformatics) (2019 - 2023)</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <hr>
+      <div class="skill-tags">
+        <span><i class="devicon-python-plain"></i> Python</span>
+        <span><i class="devicon-c-plain"></i> C/C++</span>
+        <span><i class="devicon-java-plain"></i> Java</span>
+        <span><i class="devicon-postgresql-plain"></i> SQL / PostgreSQL / NoSQL</span>
+        <span><i class="devicon-flask-original"></i> Flask</span>
+        <span><i class="devicon-docker-plain"></i> Docker / Kubernetes</span>
+        <span><i class="devicon-googlecloud-plain"></i> Google Cloud / Azure</span>
+        <span><i class="fas fa-brain"></i> Machine Learning</span>
+        <span><i class="fas fa-code"></i> Web Development (HTML, CSS, JS)</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <hr>
+      <div class="project-tiles">
+        <div class="project-tile">
+          <img src="https://via.placeholder.com/300x200" alt="APIVerse Project Image" class="project-image">
+          <h3>APIVerse</h3>
+          <p><strong>Technologies:</strong> Python, Flask, FastAPI, Google Cloud (Cloud Run, Datastore), Docker, OAuth</p>
+          <ul>
+            <li>Engineered a secure API exploration platform for PSU students to learn OAuth and real-world API workflows.</li>
+            <li>Designed a two-tier microservice backend (Flask gateway + FastAPI services) for routing, validation, and access control.</li>
+            <li>Integrated Gemini LLM endpoints via Vertex AI and automated API key lifecycle management.</li>
+            <li>Containerized and deployed on Cloud Run, improving scalability and iteration speed by 25% through faster redeploys.</li>
+          </ul>
+          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+        </div>
+        <div class="project-tile">
+          <img src="https://via.placeholder.com/300x200" alt="TriMet GPS Insights Project Image" class="project-image">
+          <h3>TriMet GPS Insights</h3>
+          <p><strong>Technologies:</strong> Python, PostgreSQL, Google Cloud, Google Maps API, MapboxGL</p>
+          <ul>
+            <li>Built a real-time GPS analytics pipeline processing 1.5M+ location signals using Pub/Sub and bulk ingestion.</li>
+            <li>Optimized PostgreSQL schema and batching, reducing query latency and cloud cost through compression and efficient indexing.</li>
+            <li>Visualized transit insights using MapboxGL with location clustering and route heatmaps.</li>
+          </ul>
+          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+        </div>
+        <div class="project-tile">
+          <img src="https://via.placeholder.com/300x200" alt="Code Documenter Project Image" class="project-image">
+          <h3>Code Documenter</h3>
+          <p><strong>Technologies:</strong> Python, LangChain, Gemini, AST Parsing</p>
+          <ul>
+            <li>Developed an AI-driven code summarizer generating context-aware docstrings using LangChain and Gemini 1.5 Pro.</li>
+            <li>Leveraged AST parsing to extract class and function metadata, improving documentation coverage by 30%.</li>
+            <li>Designed modular workflows enabling integration into CI/CD pipelines for automated documentation updates.</li>
+          </ul>
+          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+        </div>
+        <div class="project-tile">
+          <img src="https://via.placeholder.com/300x200" alt="ReadVault Project Image" class="project-image">
+          <h3>ReadVault</h3>
+          <p><strong>Technologies:</strong> Node.js, Express.js, PostgreSQL, Open Library API, EJS</p>
+          <ul>
+            <li>Created a full-stack reading log application inspired by Derek Sivers, enabling users to add, edit, and rate book notes.</li>
+            <li>Integrated the Open Library API via Axios to dynamically fetch book covers and metadata with fallback handling.</li>
+            <li>Implemented PostgreSQL persistence with full CRUD operations, sorting, and filtering by rating or recency.</li>
+            <li>Designed a clean EJS-based interface for dynamic data presentation, with robust error handling for API and database layers.</li>
+          </ul>
+          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+        </div>
+        <div class="project-tile">
+          <img src="https://via.placeholder.com/300x200" alt="Image Retriever Project Image" class="project-image">
+          <h3>Image Retriever</h3>
+          <p><strong>Technologies:</strong> Python, Streamlit, FAISS, PyTorch, Docker</p>
+          <ul>
+            <li>Created an AI-based visual search system using CNN embeddings and FAISS for fast image similarity queries.</li>
+            <li>Accelerated inference and reduced vector space via PCA + t-SNE, improving retrieval efficiency by 20%.</li>
+            <li>Deployed with Docker + Streamlit, providing a responsive and containerized interface for image search demos.</li>
+          </ul>
+          <a href="#" class="project-link">GitHub</a> | <a href="#" class_name="project-link">Demo</a>
+        </div>
+        <div class="project-tile">
+          <img src="https://via.placeholder.com/300x200" alt="Banking System Project Image" class="project-image">
+          <h3>Banking System</h3>
+          <p><strong>Technologies:</strong> Java, Spring Boot, PostgreSQL, AWS (RDS, KMS, SQS)</p>
+          <ul>
+            <li>Built a secure banking backend supporting user accounts, transactions, and analytics dashboards.</li>
+            <li>Enhanced reliability via AWS RDS + SQS for asynchronous transaction processing and failure recovery.</li>
+            <li>Secured sensitive data using AWS KMS encryption and audit logging for compliance.</li>
+          </ul>
+          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <hr>
+      <p><strong>Technical Support Specialist</strong> | Portland State University (Sep 2023 - Feb 2025)</p>
+      <ul>
+        <li>Resolved 150+ student IT issues, maintaining a 95% satisfaction rating.</li>
+        <li>Provided remote and in-person technical support for faculty and staff.</li>
+        <li>Assisted in Windows and Linux deployment across university labs.</li>
+      </ul>
+    </section>
+
+    <section id="hobbies" class="card">
+      <h2>Hobbies</h2>
+      <hr>
+      <ul>
+        <li>Playing RPG games</li>
+        <li>Reading books</li>
+        <li>Listening to music</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <hr>
+      <p>Contact me at: <a href="mailto:varunch@pdx.edu">varunch@pdx.edu</a></p>
+      <p>
+        <a href="https://www.linkedin.com/in/chikkala-varun/"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://github.com/tago893"><i class="fab fa-github"></i> GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <a href="#" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
