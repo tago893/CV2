@@ -313,6 +313,20 @@ footer i {
   margin-right: 5px;
 }
 
+.contact-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
 /* Back to Top Button */
 #back-to-top {
   position: fixed;
