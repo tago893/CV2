@@ -24,7 +24,6 @@
         <a href="https://github.com/tago893"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/cv36/"><i class="fab fa-linkedin"></i></a>
       </div>
-      <a href="contact.html" class="contact-button">Contact Me</a>
       <div id="theme-toggle">
         <i class="fas fa-sun"></i>
         <i class="fas fa-moon"></i>
@@ -76,72 +75,88 @@
       <hr>
       <div class="project-tiles">
         <div class="project-tile">
-          <img src="images/4.png" alt="APIVerse Project Image" class="project-image">
+          <img src="images/unnamed.jpg" alt="APIVerse Project Image" class="project-image">
           <h3>APIVerse</h3>
+          <p class="project-tldr">Engineered a secure API exploration platform for PSU students to learn real-world API workflows.</p>
           <p><strong>Technologies:</strong> Python, Flask, FastAPI, Google Cloud (Cloud Run, Datastore), Docker, OAuth</p>
           <ul>
-            <li>Engineered a secure API exploration platform for PSU students to learn OAuth and real-world API workflows.</li>
-            <li>Designed a two-tier microservice backend (Flask gateway + FastAPI services) for routing, validation, and access control.</li>
+            <li><strong>Impact:</strong> Improved scalability and iteration speed by 25% through faster redeploys on Cloud Run.</li>
             <li>Integrated Gemini LLM endpoints via Vertex AI and automated API key lifecycle management.</li>
-            <li>Containerized and deployed on Cloud Run, improving scalability and iteration speed by 25% through faster redeploys.</li>
           </ul>
-          <a href="https://github.com/sriramnurani1995/APIverse/tree/main" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+          <div class="project-links">
+            <a href="https://github.com/sriramnurani1995/APIverse/tree/main" class="project-link">GitHub</a>
+            <a href="#" class="project-link demo-button">Demo</a>
+          </div>
         </div>
         <div class="project-tile">
           <img src="images/unnamed.jpg" alt="TriMet GPS Insights Project Image" class="project-image">
           <h3>TriMet GPS Insights</h3>
+          <p class="project-tldr">Built a real-time GPS analytics pipeline processing over 1.5 million location signals for TriMet.</p>
           <p><strong>Technologies:</strong> Python, PostgreSQL, Google Cloud, Google Maps API, MapboxGL</p>
           <ul>
-            <li>Built a real-time GPS analytics pipeline processing 1.5M+ location signals using Pub/Sub and bulk ingestion.</li>
-            <li>Optimized PostgreSQL schema and batching, reducing query latency and cloud cost through compression and efficient indexing.</li>
+            <li><strong>Impact:</strong> Reduced query latency and cloud costs by optimizing the PostgreSQL schema and batching.</li>
             <li>Visualized transit insights using MapboxGL with location clustering and route heatmaps.</li>
           </ul>
-          <a href="https://github.com/AashrithaKondaveetii/DE_Project_Pipeline_Pioneers" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+          <div class="project-links">
+            <a href="https://github.com/AashrithaKondaveetii/DE_Project_Pipeline_Pioneers" class="project-link">GitHub</a>
+            <a href="#" class="project-link demo-button">Demo</a>
+          </div>
         </div>
         <div class="project-tile">
           <img src="images/code_documenter.png" alt="Code Documenter Project Image" class="project-image">
           <h3>Code Documenter</h3>
+          <p class="project-tldr">An AI-driven code summarizer that generates context-aware docstrings for Python code.</p>
           <p><strong>Technologies:</strong> Python, LangChain, Gemini, AST Parsing</p>
           <ul>
-            <li>Developed an AI-driven code summarizer generating context-aware docstrings using LangChain and Gemini 1.5 Pro.</li>
-            <li>Leveraged AST parsing to extract class and function metadata, improving documentation coverage by 30%.</li>
-            <li>Designed modular workflows enabling integration into CI/CD pipelines for automated documentation updates.</li>
+            <li><strong>Impact:</strong> Improved documentation coverage by 30% by leveraging AST parsing to extract class and function metadata.</li>
+            <li>Designed modular workflows for integration into CI/CD pipelines.</li>
           </ul>
-          <a href="https://gitlab.com/varunch2/gensec-chikkala-varunch/-/tree/main/hw4?ref_type=heads" class="project-link">GitHub</a> | <a href="https://media.pdx.edu/media/t/1_d4m5a4hb" class="project-link">Demo</a>
+          <div class="project-links">
+            <a href="https://gitlab.com/varunch2/gensec-chikkala-varunch/-/tree/main/hw4?ref_type=heads" class="project-link">GitHub</a>
+            <a href="https://media.pdx.edu/media/t/1_d4m5a4hb" class="project-link demo-button">Demo</a>
+          </div>
         </div>
         <div class="project-tile">
           <img src="images/read.jpg" alt="ReadVault Project Image" class="project-image">
           <h3>ReadVault</h3>
+          <p class="project-tldr">A full-stack reading log application for users to add, edit, and rate book notes.</p>
           <p><strong>Technologies:</strong> Node.js, Express.js, PostgreSQL, Open Library API, EJS</p>
           <ul>
-            <li>Created a full-stack reading log application inspired by Derek Sivers, enabling users to add, edit, and rate book notes.</li>
-            <li>Integrated the Open Library API via Axios to dynamically fetch book covers and metadata with fallback handling.</li>
-            <li>Implemented PostgreSQL persistence with full CRUD operations, sorting, and filtering by rating or recency.</li>
-            <li>Designed a clean EJS-based interface for dynamic data presentation, with robust error handling for API and database layers.</li>
+            <li><strong>Impact:</strong> Ensured high availability and data integrity with a robust error-handling and fallback mechanism.</li>
+            <li>Integrated the Open Library API to dynamically fetch book covers and metadata.</li>
           </ul>
-          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub</a>
+            <a href="#" class="project-link demo-button">Demo</a>
+          </div>
         </div>
         <div class="project-tile">
           <img src="images/image_retriever.png" alt="Image Retriever Project Image" class="project-image">
           <h3>Image Retriever</h3>
+          <p class="project-tldr">An AI-based visual search system using CNN embeddings and FAISS for fast image similarity queries.</p>
           <p><strong>Technologies:</strong> Python, Streamlit, FAISS, PyTorch, Docker</p>
           <ul>
-            <li>Created an AI-based visual search system using CNN embeddings and FAISS for fast image similarity queries.</li>
-            <li>Accelerated inference and reduced vector space via PCA + t-SNE, improving retrieval efficiency by 20%.</li>
-            <li>Deployed with Docker + Streamlit, providing a responsive and containerized interface for image search demos.</li>
+            <li><strong>Impact:</strong> Improved retrieval efficiency by 20% by accelerating inference and reducing vector space via PCA + t-SNE.</li>
+            <li>Deployed with Docker + Streamlit for a responsive, containerized interface.</li>
           </ul>
-          <a href="#" class="project-link">GitHub</a> | <a href="#" class_name="project-link">Demo</a>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub</a>
+            <a href="#" class="project-link demo-button">Demo</a>
+          </div>
         </div>
         <div class="project-tile">
           <img src="images/ChatGPT Image Jan 10, 2026, 08_55_09 PM.png" alt="Banking System Project Image" class="project-image">
           <h3>Banking System</h3>
+          <p class="project-tldr">A secure banking backend supporting user accounts, transactions, and analytics dashboards.</p>
           <p><strong>Technologies:</strong> Java, Spring Boot, PostgreSQL, AWS (RDS, KMS, SQS)</p>
           <ul>
-            <li>Built a secure banking backend supporting user accounts, transactions, and analytics dashboards.</li>
-            <li>Enhanced reliability via AWS RDS + SQS for asynchronous transaction processing and failure recovery.</li>
-            <li>Secured sensitive data using AWS KMS encryption and audit logging for compliance.</li>
+            <li><strong>Impact:</strong> Enhanced reliability with AWS RDS and SQS for asynchronous transaction processing and failure recovery.</li>
+            <li>Secured sensitive data using AWS KMS encryption and audit logging.</li>
           </ul>
-          <a href="#" class="project-link">GitHub</a> | <a href="#" class="project-link">Demo</a>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub</a>
+            <a href="#" class="project-link demo-button">Demo</a>
+          </div>
         </div>
       </div>
     </section>
@@ -183,11 +198,8 @@
     </section>
   </main>
 
-  <footer id="contact">
+  <footer>
     <div class="container">
-      <h2>Contact</h2>
-      <hr>
-      <p>Contact me at: <a href="mailto:varunch@pdx.edu">varunch@pdx.edu</a> or through the <a href="contact.html">Contact Page</a></p>
       <p>
         <a href="https://www.linkedin.com/in/chikkala-varun/"><i class="fab fa-linkedin"></i> LinkedIn</a> |
         <a href="https://github.com/tago893"><i class="fab fa-github"></i> GitHub</a>
